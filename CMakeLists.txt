@@ -143,7 +143,7 @@ lxqt_translate_ts(QTERMWIDGET_QM
         Runtime
 )
 
-add_library(${QTERMWIDGET_LIBRARY_NAME} SHARED ${SRCS} ${MOCS} ${UI_SRCS} ${QTERMWIDGET_QM})
+add_library(${QTERMWIDGET_LIBRARY_NAME} STATIC ${SRCS} ${MOCS} ${UI_SRCS} ${QTERMWIDGET_QM})
 target_link_libraries(${QTERMWIDGET_LIBRARY_NAME} Qt5::Widgets)
 set_target_properties( ${QTERMWIDGET_LIBRARY_NAME} PROPERTIES
                        SOVERSION ${QTERMWIDGET_VERSION_MAJOR}
